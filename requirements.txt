@@ -1,0 +1,39 @@
+# LangChain core dependencies
+langchain==0.3.12
+langchain-core==0.3.27
+langchain-community==0.3.12
+langchain-openai==0.2.14
+langchain-text-splitters==0.3.4
+
+# Vector databases
+chromadb==0.5.23
+faiss-cpu==1.9.0.post1
+pinecone==5.4.2
+pinecone-text==0.9.0
+
+# OpenAI API
+openai==1.58.1
+tiktoken==0.8.0
+
+# Document processing
+pypdf==5.1.0
+python-docx==1.1.2
+openpyxl==3.1.5
+
+# Environment variable management
+python-dotenv==1.0.1
+
+# Web framework (optional, for API services)
+fastapi==0.115.6
+uvicorn==0.34.0
+
+# Data processing
+pandas==2.2.3
+numpy==2.2.0
+
+# Logging and monitoring
+loguru==0.7.3
+
+# Type validation and settings
+pydantic==2.10.3
+pydantic-settings==2.7.0
