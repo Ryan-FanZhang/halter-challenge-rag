@@ -198,7 +198,7 @@ class RAGSystem:
 
 def main():
     print("=" * 70)
-    print("🚀 Complete RAG System")
+    print("🚀 RAG Question Answering System")
     print("   Retrieval → Reranking → Augmentation → Generation")
     print("=" * 70)
     
@@ -215,33 +215,10 @@ def main():
     print(f"   • Reranking: LLM (final_k=5)")
     print(f"   • Generation: GPT-4o-mini (structured output)")
     
-    # Demo questions
-    demo_questions = [
-        "What is the difference between workflows and agents?",
-        "When should I use the routing workflow pattern?",
-        "What are the best practices for building agents?",
-    ]
-    
     print("\n" + "=" * 70)
-    print("📋 Demo Questions")
-    print("=" * 70)
-    
-    for q in demo_questions:
-        print(f"\n  • {q}")
-    
-    # Run demo
-    run_demo = input("\n▶️  Run demo? (y/n): ").strip().lower()
-    
-    if run_demo == 'y':
-        for question in demo_questions:
-            result = rag.ask(question)
-            print("\n" + "=" * 70)
-            input("Press Enter for next question...")
-    
-    # Interactive mode
-    print("\n" + "=" * 70)
-    print("💬 Interactive Mode")
-    print("   Type your questions (or 'quit' to exit)")
+    print("💬 Interactive Q&A")
+    print("   Type your questions freely")
+    print("   Commands: 'q' to quit")
     print("=" * 70)
     
     while True:
